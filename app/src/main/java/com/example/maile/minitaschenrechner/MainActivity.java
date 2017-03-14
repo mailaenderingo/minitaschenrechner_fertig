@@ -15,18 +15,23 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
         setContentView(R.layout.activity_main);
 
     }
 
     public void berechnen ( View v){
 
+        float z1;
+        float z2;
+
+
         EditText feld1 = (EditText) findViewById(R.id.zahl1); // Zugriff auf Layout (Objekt)
         EditText feld2 = (EditText) findViewById(R.id.zahl2);
         EditText felderg = (EditText) findViewById(R.id.erg);
 
-        Integer z1 = Integer.parseInt(feld1.getText().toString());// Auslesen der Felder
-        Integer z2 = Integer.parseInt(feld2.getText().toString());
+        z1 = Float.parseFloat(feld1.getText().toString());// Auslesen der Felder
+        z2 = Float.parseFloat(feld2.getText().toString());
 
        try {
            felderg.setText(String.valueOf(z1 / z2));
