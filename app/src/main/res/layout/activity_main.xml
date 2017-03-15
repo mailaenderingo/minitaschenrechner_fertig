@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
+
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
@@ -89,5 +90,15 @@
         android:ems="10"
         android:gravity="center_horizontal|center_vertical"
         android:inputType="numberDecimal" />
+    <person>
+        <name>Ingo Mailänder</name>
+        <matrikelnummer>1360143</matrikelnummer>
+        <lastcommithash>5df6692190fa69f84d0a6d0976b99a185a22c934</lastcommithash>
+        <githubusername>mailaenderingo</githubusername>
+        <repositoryname>minitaschenrechner_fertig</repositoryname>
+        <repositoryurl>https://github.com/mailaenderingo/minitaschenrechner_fertig</repositoryurl>
+    </person>
 
 </RelativeLayout>
+
+
