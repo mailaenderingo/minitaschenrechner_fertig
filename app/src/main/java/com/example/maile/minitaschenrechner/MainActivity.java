@@ -17,12 +17,10 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
         setContentView(R.layout.activity_main);
-
     }
 
-    public void berechnen ( View v){
+    public void berechnen ( View v) throws IOException{
 
         float z1;
         float z2;
@@ -36,11 +34,12 @@ public class MainActivity extends AppCompatActivity {
         z2 = Float.parseFloat(feld2.getText().toString());
 
        try {
+
            felderg.setText(String.valueOf(z1 / z2));
        }
-       catch (Exception e){
+       catch (NumberFormatException nfe){
 
-           felderg.setText("Fehler");
+           felderg.setText("Sie haben keinen numerischen Wert eingegeben");
        }
 
     }
