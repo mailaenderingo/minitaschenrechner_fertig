@@ -10,6 +10,8 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.EditText;
 
+import java.io.IOException;
+
 public class MainActivity extends AppCompatActivity {
 
     @Override
@@ -38,7 +40,7 @@ public class MainActivity extends AppCompatActivity {
        }
        catch (Exception e){
 
-           felderg.setText("Error");
+           felderg.setText("Fehler");
        }
 
     }
